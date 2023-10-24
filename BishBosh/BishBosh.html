@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BishBosh</title>
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <header>
+
+
+            <h1>Bish Bosh <br> The Game</h1>
+        </header>
+        <main>
+            <div id="content" class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4 italic">
+                            Input
+                        </h2>
+                        <p>
+                        <div id="length">
+                            Here you Specify the length of the loop that you would like to run<br>
+                            Input: <input type="number" min="0" id="loopLength" name="loopLength"
+                                oninput="validity.valid||(value='');"><br><br>
+                        </div>
+
+                        <div id="bish">
+                            Here you specify the number which is to be replaced by bish<br>
+                            Input: <input type="number" min="0" id="bishNumber" name="bishNumber"
+                                oninput="validity.valid||(value='');"><br><br>
+                        </div>
+                        <div id="bosh">
+                            Here you specify the number which is to be replaced by bosh<br>
+                            Input: <input type="number" min="0" id="boshNumber" name="boshNumber"
+                                oninput="validity.valid||(value='');"><br><br>
+                        </div>
+
+                        <div id="button">
+                            <button class="mb-2" id="myBtn">Run Bishbosh on webpage</button>
+                        </div>
+
+                        <div id="display"></div>
+                        </p>
+                    </div>
+
+                    <aside class="col-lg-4 p-3">
+                        <h2 class="mb-4 italic">Instructions</h2>
+                        <p> In order to play Bish Bosh, you need to enter 3 numbers. <br> <br>
+                            the first number is the length of the loop that you would like to run. i.e 50. <br> <br>
+                            The second number will replace every number dividable for the length of the loop by that
+                            number, by bish. <br> <br>
+                            The third number will do the same as the second, expect this time if the number in the loop
+                            will be replaced by bosh. <br> <br>
+
+                            if the number can be evenly divided by both bish and bosh, it will be replaced by bishbosh.
+                            <br><br>
+                            Example: <br> if first number is 15, second number or "bish" is 2 and third number or "bosh"
+                            is 3. <br> <br> The result will be: 1, bish, bosh, bish, 5, bishbosh, 7, bish, bosh, bish,
+                            11, bishbosh, 13, bish, bosh
+
+                        </p>
+
+                    </aside>
+                </div>
+            </div>
+
+
+
+
+    </div>
+
+
+
+    </main>
+
+    <div class="container">
+        <footer>
+            &copy Mikael Perming
+            <div id="consolebutton">
+                <button id="consolebutton">Run Bishbosh in Console</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/java/Bish.js">
+
+    </script>
+</body>
+
+</html>
